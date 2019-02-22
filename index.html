@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #branch {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 0%;
+            left: 40%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+
+        }
+
+
+        #leftBranch {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 30%;
+            left: 28%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+
+        #centerBranch {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 39%;
+            left: 43%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+
+        #rightBranch {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 33%;
+            left: 58%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+
+        #bigLeef {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 14%;
+            left: 20%;
+            transition: width 4s;
+            transition: height 4s;
+            -moz-transition: width 4s;
+            -moz-transition: heigth 4s;
+            /* Firefox 4 */
+            -webkit-transition: width 4s;
+            -webkit-transition: height 4s;
+            /* Safari and Chrome */
+            -o-transition: width 4s;
+            -o-transition: height 4s;
+            /* Opera */
+        }
+
+        #leftLeef {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 21%;
+            left: 40%;
+            transition: width 8s;
+            transition: height 8s;
+            -moz-transition: width 8s;
+            -moz-transition: heigth 8s;
+            /* Firefox 4 */
+            -webkit-transition: width 8s;
+            -webkit-transition: height 8s;
+            /* Safari and Chrome */
+            -o-transition: width 8s;
+            -o-transition: height 8s;
+            /* Opera */
+        }
+
+        #classics {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 22%;
+            left: 43%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            /* animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* -moz-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* -webkit-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* -o-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+
+        }
+
+        #classics:hover {
+            background-color: rgba(119, 183, 235, 0.5);
+            /* animation: circle 1s infinite linear;
+
+            -moz-animation: circle 1s infinite linear;
+
+            -webkit-animation: circle 1s infinite linear;
+
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #popular {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 21%;
+            left: 63%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            /* animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* -moz-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* -webkit-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* -o-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+
+        }
+        #popular:hover {
+            background-color: rgba(119, 183, 235, 0.5);
+            /* animation: circle 1s infinite linear;
+
+            -moz-animation: circle 1s infinite linear;
+
+            -webkit-animation: circle 1s infinite linear;
+
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #theme {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 32%;
+            left: 58%;
+            color:aliceblue;
+            text-align: center;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            /* animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* -moz-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* -webkit-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* -o-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+
+        }
+        #theme:hover {
+            background-color: rgba(119, 183, 235, 0.5);
+            /* animation: circle 1s infinite linear;
+
+            -moz-animation: circle 1s infinite linear;
+
+            -webkit-animation: circle 1s infinite linear;
+
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #comedy {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 35.9%;
+            left: 70.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            /* animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* -moz-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* -webkit-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* -o-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+
+        }
+        #comedy:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+
+            -moz-animation: circle 1s infinite linear;
+
+            -webkit-animation: circle 1s infinite linear;
+
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #love {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 34.9%;
+            left: 64.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            /* animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* -moz-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* -webkit-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* -o-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+
+        }
+        #love:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+
+            -moz-animation: circle 1s infinite linear;
+
+            -webkit-animation: circle 1s infinite linear;
+
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #action {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 40.9%;
+            left: 58.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            /* animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* -moz-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* -webkit-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* -o-animation: circle 1s infinite linear; */
+            /*匀速 循环*/
+
+        }
+        #action:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #disaster {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 39.9%;
+            left: 62.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #disaster:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #historical {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 46.9%;
+            left: 61.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #historical:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #record {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 44.9%;
+            left: 67.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #record:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #horror {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 44.9%;
+            left: 72.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #horror:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #prices {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 38%;
+            left: 52%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #prices:hover {
+            background-color: rgba(119, 183, 235, 0.5);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #oscar {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 45.9%;
+            left: 41.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #oscar:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #horse {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 60.9%;
+            left: 46.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #horse:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #palm {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 62.9%;
+            left: 50.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #palm:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #mood {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 30%;
+            left: 44%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+
+        }
+        #mood:hover {
+            background-color: rgba(119, 183, 235, 0.5);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #missing {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 35.9%;
+            left: 30.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #missing:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #loneliness {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 42.9%;
+            left: 32.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+        }
+        #loneliness:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #relaxation {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 37.9%;
+            left: 40.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+
+        }
+        #relaxation:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #pain {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 30.9%;
+            left: 35.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+        }
+        #pain:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+        #quietness {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 25.9%;
+            left: 40.5%;
+            text-align: center;
+            color:aliceblue;
+            border-radius: 10px;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+        }
+        #quietness:hover {
+            background-color: rgba(243, 127, 181, 0.7);
+            /* animation: circle 1s infinite linear;
+            -moz-animation: circle 1s infinite linear;
+            -webkit-animation: circle 1s infinite linear;
+            -o-animation: circle 1s infinite linear; */
+        }
+
+
+        /* 旋转动画 */
+        @keyframes circle {
+            0% {
+                transform: rotate(30deg);
+
+            }
+            25% {
+                transform: rotate(0deg);
+
+            }
+
+            50% {
+
+                transform: rotate(-30deg);
+            }
+            75% {
+
+                transform: rotate(0deg);
+            }
+        }
+        @-moz-keyframes circle {
+            0% {
+                transform: rotate(30deg);
+
+            }
+            25% {
+                transform: rotate(0deg);
+
+            }
+
+            50% {
+
+                transform: rotate(-30deg);
+            }
+            75% {
+
+                transform: rotate(0deg);
+            }
+        }
+        @-webkit-keyframes circle {
+            0% {
+                transform: rotate(30deg);
+
+            }
+            25% {
+                transform: rotate(0deg);
+
+            }
+
+            50% {
+
+                transform: rotate(-30deg);
+            }
+            75% {
+
+                transform: rotate(0deg);
+            }
+        }
+        @-o-keyframes circle {
+            0% {
+                transform: rotate(30deg);
+
+            }
+            25% {
+                transform: rotate(0deg);
+
+            }
+
+            50% {
+
+                transform: rotate(-30deg);
+            }
+            75% {
+
+                transform: rotate(0deg);
+            }
+        }
+        #CLLeef {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 29%;
+            left: 41%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+
+        #CLeef {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 35%;
+            left: 45%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+
+        #CRLeef {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 32%;
+            left: 55%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+
+        #rightLeef {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 21%;
+            left: 60%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+
+        #flower1 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 35%;
+            left: 30%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower1Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower2 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 42%;
+            left: 32%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower2Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower3 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 37%;
+            left: 40%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower3Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower4 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 30%;
+            left: 35%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower4Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower5 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 45%;
+            left: 41%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower5Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower6 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 60%;
+            left: 46%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower6Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower7 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 62%;
+            left: 50%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower7Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower8 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 35%;
+            left: 70%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower8Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower9 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 34%;
+            left: 64%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower9Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower10 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 40%;
+            left: 58%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower10Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower11 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 39%;
+            left: 62%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower11Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower12 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 46%;
+            left: 61%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower12Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower13 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 44%;
+            left: 67%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower13Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+
+        #flower14 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 44%;
+            left: 72%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower14Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+        #flower15 {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            bottom: 25%;
+            left: 40%;
+            transition: width 2s;
+            transition: height 2s;
+            -moz-transition: width 2s;
+            -moz-transition: heigth 2s;
+            /* Firefox 4 */
+            -webkit-transition: width 2s;
+            -webkit-transition: height 2s;
+            /* Safari and Chrome */
+            -o-transition: width 2s;
+            -o-transition: height 2s;
+            /* Opera */
+        }
+        #flower15Div :hover{
+            animation: circle 10s infinite linear;
+            /*匀速 循环*/
+            -moz-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Firefox 4 */
+            -webkit-animation: circle 1s infinite linear;
+            /*匀速 循环*/
+            /* Safari and Chrome */
+            -o-animation: circle 1s infinite linear;
+        }
+        /* 搜索框样式 */
+        /* .bar8{
+        height:50px;
+    } */
+        .bar8 input {
+            width:0;
+            padding:0 50px 0 15px;
+            border-bottom:2px solid transparent;
+            background:transparent;
+            transition:.3s linear;
+            position:absolute;
+            height:100%;
+            top:0;
+            right:0;
+            z-index:2;
+        }
+        .bar8 input:focus {
+            width:200px;
+            z-index:1;
+            border-bottom:2px solid #F9F0DA;
+        }
+        .bar8 button {
+            background:#683B4D;
+            height: 100%;
+        }
+        .bar8 button:before {
+            content:"Go";
+            font-family:FontAwesome;
+            font-size:24px;
+            height: 100%;
+            color:#F9F0DA;
+        }
+        .bar8{
+            position: absolute;
+            top:10%;
+            right:10%;
+        }
+        #bg{
+            position: absolute;
+            left: 0%;
+            top:0%;
+            width: 50%;
+            height: 50%;
+        }
+        #showBranch{
+            position: absolute;
+            left: 50%;
+            bottom:0%;
+        }
+    </style>
+</head>
+
+<body onload="showBigBranch()">
+<script>
+    function showBigBranch() {
+        document.getElementById("branch").style.width = "30%";
+        document.getElementById("branch").style.height = "50%";
+        document.getElementById("leftLeef").style.width = "10%";
+        document.getElementById("leftLeef").style.height = "12%";
+        document.getElementById("classics").style.width = "4%";
+        document.getElementById("classics").style.height = "4%";
+        document.getElementById("classics").innerText = "经典";
+
+        document.getElementById("rightLeef").style.width = "10%";
+        document.getElementById("rightLeef").style.height = "12%";
+        document.getElementById("popular").style.width = "4%";
+        document.getElementById("popular").style.height = "4%";
+        document.getElementById("popular").innerText = "热门";
+
+        document.getElementById("CLLeef").style.width = "12%";
+        document.getElementById("CLLeef").style.height = "15%";
+        document.getElementById("mood").style.width = "4%";
+        document.getElementById("mood").style.height = "4%";
+        document.getElementById("mood").innerText = "心情";
+
+        document.getElementById("CLeef").style.width = "18%";
+        document.getElementById("CLeef").style.height = "30%";
+        document.getElementById("prices").style.width = "4%";
+        document.getElementById("prices").style.height = "4%";
+        document.getElementById("prices").innerText = "奖项";
+
+        document.getElementById("CRLeef").style.width = "10%";
+        document.getElementById("CRLeef").style.height = "12%";
+        document.getElementById("theme").style.width = "4%";
+        document.getElementById("theme").style.height = "4%";
+        document.getElementById("theme").innerText = "题材";
+
+        if (document.getElementById("bigLeef").style.width == 0 || document.getElementById("bigLeef").style.width == "0%") {
+            document.getElementById("bigLeef").style.width = "70%";
+            document.getElementById("bigLeef").style.height = "70%";
+
+        }
+        else {
+            document.getElementById("bigLeef").style.width = "0%";
+            document.getElementById("bigLeef").style.height = "0%";
+
+        }
+
+    }
+    function showLeftBranch() {//心情
+        if (document.getElementById("leftBranch").style.width == 0 || document.getElementById("leftBranch").style.width == "0%") {
+            document.getElementById("leftBranch").style.width = "20%";
+            document.getElementById("leftBranch").style.height = "40%";
+            document.getElementById("flower1").style.width = "6%";
+            document.getElementById("flower1").style.height = "10%";
+            document.getElementById("missing").style.width = "4%";
+            document.getElementById("missing").style.height = "4%";
+            document.getElementById("missing").innerText = "思念";
+
+            document.getElementById("flower2").style.width = "6%";
+            document.getElementById("flower2").style.height = "10%";
+            document.getElementById("loneliness").style.width = "4%";
+            document.getElementById("loneliness").style.height = "4%";
+            document.getElementById("loneliness").innerText = "寂寞";
+
+            document.getElementById("flower3").style.width = "6%";
+            document.getElementById("flower3").style.height = "10%";
+            document.getElementById("relaxation").style.width = "4%";
+            document.getElementById("relaxation").style.height = "4%";
+            document.getElementById("relaxation").innerText = "放松";
+
+            document.getElementById("flower4").style.width = "6%";
+            document.getElementById("flower4").style.height = "10%";
+            document.getElementById("pain").style.width = "4%";
+            document.getElementById("pain").style.height = "4%";
+            document.getElementById("pain").innerText = "心痛";
+
+            document.getElementById("flower15").style.width = "6%";
+            document.getElementById("flower15").style.height = "10%";
+            document.getElementById("quietness").style.width = "4%";
+            document.getElementById("quietness").style.height = "4%";
+            document.getElementById("quietness").innerText = "安静";
+        }
+        else {
+            document.getElementById("leftBranch").style.width = "0%";
+            document.getElementById("leftBranch").style.height = "0%";
+            document.getElementById("flower1").style.width = "0%";
+            document.getElementById("flower1").style.height = "0%";
+            document.getElementById("missing").style.width = "0%";
+            document.getElementById("missing").style.height = "0%";
+            document.getElementById("missing").innerText = "";
+
+            document.getElementById("flower2").style.width = "0%";
+            document.getElementById("flower2").style.height = "0%";
+            document.getElementById("loneliness").style.width = "0%";
+            document.getElementById("loneliness").style.height = "0%";
+            document.getElementById("loneliness").innerText = "";
+
+            document.getElementById("flower3").style.width = "0%";
+            document.getElementById("flower3").style.height = "0%";
+            document.getElementById("relaxation").style.width = "0%";
+            document.getElementById("relaxation").style.height = "0%";
+            document.getElementById("relaxation").innerText = "";
+
+            document.getElementById("flower4").style.width = "0%";
+            document.getElementById("flower4").style.height = "0%";
+            document.getElementById("pain").style.width = "0%";
+            document.getElementById("pain").style.height = "0%";
+            document.getElementById("pain").innerText = "";
+
+            document.getElementById("flower15").style.width = "0%";
+            document.getElementById("flower15").style.height = "0%";
+            document.getElementById("quietness").style.width = "0%";
+            document.getElementById("quietness").style.height = "0%";
+            document.getElementById("quietness").innerText = "";
+        }
+
+
+    }
+    function showCenterBranch() {//奖项
+        if (document.getElementById("centerBranch").style.width == 0 || document.getElementById("centerBranch").style.width == "0%") {
+            document.getElementById("centerBranch").style.width = "20%";
+            document.getElementById("centerBranch").style.height = "60%";
+            document.getElementById("flower5").style.width = "6%";
+            document.getElementById("flower5").style.height = "10%";
+            document.getElementById("oscar").style.width = "4%";
+            document.getElementById("oscar").style.height = "4%";
+            document.getElementById("oscar").innerText = "奥斯卡";
+
+            document.getElementById("flower6").style.width = "6%";
+            document.getElementById("flower6").style.height = "10%";
+            document.getElementById("horse").style.width = "4%";
+            document.getElementById("horse").style.height = "4%";
+            document.getElementById("horse").innerText = "金马奖";
+
+            document.getElementById("flower7").style.width = "6%";
+            document.getElementById("flower7").style.height = "10%";
+            document.getElementById("palm").style.width = "4%";
+            document.getElementById("palm").style.height = "4%";
+            document.getElementById("palm").innerText = "金棕榈";
+        }
+        else {
+            document.getElementById("centerBranch").style.width = "0%";
+            document.getElementById("centerBranch").style.height = "0%";
+            document.getElementById("flower5").style.width = "0%";
+            document.getElementById("flower5").style.height = "0%";
+            document.getElementById("oscar").style.width = "0%";
+            document.getElementById("oscar").style.height = "0%";
+            document.getElementById("oscar").innerText = "";
+
+            document.getElementById("flower6").style.width = "0%";
+            document.getElementById("flower6").style.height = "0%";
+            document.getElementById("horse").style.width = "0%";
+            document.getElementById("horse").style.height = "0%";
+            document.getElementById("horse").innerText = "";
+
+            document.getElementById("flower7").style.width = "0%";
+            document.getElementById("flower7").style.height = "0%";
+            document.getElementById("palm").style.width = "0%";
+            document.getElementById("palm").style.height = "0%";
+            document.getElementById("palm").innerText = "";
+        }
+
+
+    }
+    function showRightBranch() {//题材
+        if (document.getElementById("rightBranch").style.width == 0 || document.getElementById("rightBranch").style.width == "0%") {
+            document.getElementById("rightBranch").style.width = "25%";
+            document.getElementById("rightBranch").style.height = "60%";
+            document.getElementById("flower8").style.width = "6%";
+            document.getElementById("flower8").style.height = "10%";
+            document.getElementById("comedy").style.width = "4%";
+            document.getElementById("comedy").style.height = "4%";
+            document.getElementById("comedy").innerText = "喜剧";
+
+            document.getElementById("flower9").style.width = "6%";
+            document.getElementById("flower9").style.height = "10%";
+            document.getElementById("love").style.width = "4%";
+            document.getElementById("love").style.height = "4%";
+            document.getElementById("love").innerText = "爱情";
+
+            document.getElementById("flower10").style.width = "6%";
+            document.getElementById("flower10").style.height = "10%";
+            document.getElementById("action").style.width = "4%";
+            document.getElementById("action").style.height = "4%";
+            document.getElementById("action").innerText = "动作";
+
+            document.getElementById("flower11").style.width = "6%";
+            document.getElementById("flower11").style.height = "10%";
+            document.getElementById("disaster").style.width = "4%";
+            document.getElementById("disaster").style.height = "4%";
+            document.getElementById("disaster").innerText = "灾难";
+
+            document.getElementById("flower12").style.width = "6%";
+            document.getElementById("flower12").style.height = "10%";
+            document.getElementById("historical").style.width = "4%";
+            document.getElementById("historical").style.height = "4%";
+            document.getElementById("historical").innerText = "历史";
+
+            document.getElementById("flower13").style.width = "6%";
+            document.getElementById("flower13").style.height = "10%";
+            document.getElementById("record").style.width = "4%";
+            document.getElementById("record").style.height = "4%";
+            document.getElementById("record").innerText = "纪录";
+
+            document.getElementById("flower14").style.width = "6%";
+            document.getElementById("flower14").style.height = "10%";
+            document.getElementById("horror").style.width = "4%";
+            document.getElementById("horror").style.height = "4%";
+            document.getElementById("horror").innerText = "恐怖";
+
+        }
+        else {
+            document.getElementById("rightBranch").style.width = "0%";
+            document.getElementById("rightBranch").style.height = "0%";
+            document.getElementById("flower8").style.width = "0%";
+            document.getElementById("flower8").style.height = "0%";
+            document.getElementById("comedy").style.width = "0%";
+            document.getElementById("comedy").style.height = "0%";
+            document.getElementById("comedy").innerText = "";
+
+            document.getElementById("flower9").style.width = "0%";
+            document.getElementById("flower9").style.height = "0%";
+            document.getElementById("love").style.width = "0%";
+            document.getElementById("love").style.height = "0%";
+            document.getElementById("love").innerText = "";
+
+            document.getElementById("flower10").style.width = "0%";
+            document.getElementById("flower10").style.height = "0%";
+            document.getElementById("action").style.width = "0%";
+            document.getElementById("action").style.height = "0%";
+            document.getElementById("action").innerText = "";
+
+            document.getElementById("flower11").style.width = "0%";
+            document.getElementById("flower11").style.height = "0%";
+            document.getElementById("disaster").style.width = "0%";
+            document.getElementById("disaster").style.height = "0%";
+            document.getElementById("disaster").innerText = "";
+
+            document.getElementById("flower12").style.width = "0%";
+            document.getElementById("flower12").style.height = "0%";
+            document.getElementById("historical").style.width = "0%";
+            document.getElementById("historical").style.height = "0%";
+            document.getElementById("historical").innerText = "";
+
+            document.getElementById("flower13").style.width = "0%";
+            document.getElementById("flower13").style.height = "0%";
+            document.getElementById("record").style.width = "0%";
+            document.getElementById("record").style.height = "0%";
+            document.getElementById("record").innerText = "";
+
+            document.getElementById("flower14").style.width = "0%";
+            document.getElementById("flower14").style.height = "0%";
+            document.getElementById("horror").style.width = "0%";
+            document.getElementById("horror").style.height = "0%";
+            document.getElementById("horror").innerText = "";
+        }
+    }
+
+    function toDetail(movieType) {
+        window.location.href = 'WebContent/jsp/detail.jsp?value=' + movieType;
+    }
+
+
+</script>
+
+<img src="WebContent/resources/img/bg.gif" id="bg" />
+<img src="WebContent/resources/img/bigLeef.png" id="bigLeef" />
+<img src="WebContent/resources/img/branch.png" id="branch" />
+<img src="WebContent/resources/img/leftBranch.png" id="leftBranch" />
+<img src="WebContent/resources/img/centerBranch.png" id="centerBranch" />
+<img src="WebContent/resources/img/rightBranch.png" id="rightBranch" />
+<img src="WebContent/resources/img/leef.png" id="leftLeef" />
+<img src="WebContent/resources/img/leef.png" id="CLLeef" onclick="showLeftBranch()" />
+<img src="WebContent/resources/img/leef.png" id="CLeef" onclick="showCenterBranch()" />
+<img src="WebContent/resources/img/leef.png" id="CRLeef" onclick="showRightBranch()" />
+<img src="WebContent/resources/img/leef.png" id="rightLeef" />
+<div id="flower1Div"><img src="WebContent/resources/img/flower.png" id="flower1" /></div>
+<div id="flower2Div"> <img src="WebContent/resources/img/flower.png" id="flower2" /></div>
+<div id="flower3Div"> <img src="WebContent/resources/img/flower.png" id="flower3" /></div>
+<div id="flower4Div"><img src="WebContent/resources/img/flower.png" id="flower4" /></div>
+<div id="flower5Div"><img src="WebContent/resources/img/flower.png" id="flower5" /></div>
+<div id="flower6Div"><img src="WebContent/resources/img/flower.png" id="flower6" /></div>
+<div id="flower7Div"><img src="WebContent/resources/img/flower.png" id="flower7" /></div>
+<div id="flower8Div"><img src="WebContent/resources/img/flower.png" id="flower8" /></div>
+<div id="flower9Div"><img src="WebContent/resources/img/flower.png" id="flower9" /></div>
+<div id="flower10Div"><img src="WebContent/resources/img/flower.png" id="flower10" /></div>
+<div id="flower11Div"><img src="WebContent/resources/img/flower.png" id="flower11" /></div>
+<div id="flower12Div"><img src="WebContent/resources/img/flower.png" id="flower12" /></div>
+<div id="flower13Div"><img src="WebContent/resources/img/flower.png" id="flower13" /></div>
+<div id="flower14Div"><img src="WebContent/resources/img/flower.png" id="flower14" /></div>
+<!-- 对应quietness -->
+<div id="flower15Div"><img src="WebContent/resources/img/flower.png" id="flower15" /></div>
+
+<div id="classics" onclick="toDetail('classics')"></div>
+<div id="popular" onclick="toDetail('popular')"></div>
+
+<div id="theme" onclick="showRightBranch('theme')"></div>
+<div id="comedy" onclick="toDetail('comedy')"></div>
+<div id="love" onclick="toDetail('love')"></div>
+<div id="action" onclick="toDetail('action')"></div>
+<div id="disaster" onclick="toDetail('disaster')"></div>
+<div id="historical" onclick="toDetail('historical')"></div>
+<div id="record" onclick="toDetail('record')"></div>
+<div id="horror" onclick="toDetail('horror')"></div>
+
+<div id="prices" onclick="showCenterBranch()"></div>
+<div id="oscar" onclick="toDetail('oscar')"></div>
+<div id="horse" onclick="toDetail('horse')"></div>
+<div id="palm" onclick="toDetail('palm')"></div>
+
+
+<div id="mood" onclick="showLeftBranch()"></div>
+<div id="missing" onclick="toDetail('missing')"></div>
+<div id="loneliness" onclick="toDetail('loneliness')"></div>
+<div id="relaxation" onclick="toDetail('relaxation')"></div>
+<div id="pain" onclick="toDetail('pain')"></div>
+<div id="quietness" onclick="toDetail('quietness')"></div>
+
+<div class="search bar8">
+    <input type="text" placeholder="请输入关键字">
+    <button></button>
+</div>
+</div>
+
+
+
+
+<button id="showBranch" onclick="showBigBranch()">branch</button>
+
+</body>
+
+</html>
